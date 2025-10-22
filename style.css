@@ -66,6 +66,10 @@
         background-color: #006834;
     }
 
+     #errorLabUser, #errorLabEmail, #errorLabPassword {
+        color: rgb(255, 255, 255);
+        font-size: clamp(10px, 1vw, 2vw);
+    }
     button {
         background-color: #4CAF50;
         color: white;
