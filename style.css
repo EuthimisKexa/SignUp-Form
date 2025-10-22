@@ -27,7 +27,7 @@
         margin-right: clamp(1vw, 5vw, 5vw);
         border-radius: 35px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transition-duration: 0.6s;
+        transition-duration: 0.3s;
     }
 
     #formTitle {
@@ -169,4 +169,19 @@
         text-align: center;
 
     }
+
+   
+}
+
+#returnHomeBtn{
+    height: clamp(55px, 5vh, 8vh);
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
 }

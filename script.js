@@ -56,6 +56,7 @@ form.addEventListener('submit', function(event) {
     if (!isValid) {
         event.preventDefault();
     }else {
+        event.preventDefault(); // Prevent actual form submission for demonstration
         alert('Form submitted successfully!');
         console.log('Username:', usernameInput.value);
         console.log('Email:', emailInput.value); 
