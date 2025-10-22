@@ -1,0 +1,168 @@
+/* Basic CSS Reset and Defaults */
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: clamp(15px, 1.5vw, 3vw);
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f4f4f4;
+        display: flex;
+         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(255, 218, 218);
+    }
+
+    .TitleDesc {
+        margin-left:clamp(1vw, 3vw, 4vw);
+        margin-right: clamp(1vw, 3vw, 4vw);
+        text-align: center;
+    }
+
+    form {
+        background-color: rgb(206, 74, 74);
+        padding: clamp(1vw, 3vw, 4vw);
+        margin-left:clamp(1vw, 3vw, 4vw);
+        margin-right: clamp(1vw, 5vw, 5vw);
+        border-radius: 35px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition-duration: 0.6s;
+    }
+
+    #formTitle {
+            text-align: center;
+            font-weight: bold;
+            font-size: clamp(25px, 3vw, 4vw);
+            margin: 15px 0 15px 0;   
+        }
+
+    fieldset {
+            border: none;
+        }
+
+    input, button {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #000000;
+        border-radius: 15px;
+        font-size: clamp(15px, 1.5vw, 3vw);
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: clamp(25vw, 30vw, 35vw);
+        height: clamp(5vh, 4vh, 8vh);
+        margin-bottom: 3vh;
+    }
+
+    input[type="submit"]{
+        background-color: #00ba5d;
+        color: white;
+        padding: 1vw;
+        border: none;
+    }
+    input[type="submit"]:hover {
+        background-color: #006834;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    input::placeholder{
+        text-align: center;
+
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 992px) {
+        body {
+        font-size: clamp(15px, 1.5vw, 3vw);
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(255, 218, 218);
+    }
+
+    .TitleDesc {
+        margin-left:clamp(5vw, 8vw, 10vw);
+        margin-right: clamp(5vw, 8vw, 10vw);
+        text-align: center;
+    }
+
+    form {
+        width: 80vw;
+        margin:auto;
+        background-color: rgb(206, 74, 74);
+        padding: clamp(1vw, 3vw, 4vw);
+        margin-left:clamp(0.5vw, 3vw, 4vw);
+        margin-right: clamp(0.5vw, 3vw, 4vw);
+        border-radius: 35px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition-duration: 0.6s;
+    }
+
+    #formTitle {
+            font-weight: bold;
+            text-align: center;
+            font-size: clamp(25px, 3vw, 4vw);
+            margin:auto 0 15px 0;
+        }
+
+    fieldset {
+            border: none;
+        }
+
+    input, button {
+        display: block;
+        width: 100%;
+        border: 1px solid #000000;
+        border-radius: 15px;
+        font-size: clamp(15px, 1.5vw, 3vw);
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        /*width: clamp(25vw, 30vw, 35vw);*/
+        height: clamp(55px, 5vh, 8vh);
+        margin-bottom: 3vh;
+    }
+
+    input[type="submit"]{
+        background-color: #00ba5d;
+        color: white;
+        padding: 5vw;
+        border: none;
+    }
+    input[type="submit"]:hover {
+        background-color: #006834;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    input::placeholder{
+        text-align: center;
+
+    }
+}
