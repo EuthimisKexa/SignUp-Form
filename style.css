@@ -172,9 +172,16 @@
 
    
 }
+.success-container{
+    margin: 5% 5% 5% 5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 35px;
+    padding: 20px;
+}
 
 #returnHomeBtn{
     height: clamp(55px, 5vh, 8vh);
+    width: clamp(150px, 50%, 300px);
     padding: 10px 20px;
     background-color: #28a745;
     color: white;
