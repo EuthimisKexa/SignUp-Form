@@ -60,8 +60,8 @@ form.addEventListener('submit', function(event) {
         console.log('Username:', usernameInput.value);
         console.log('Email:', emailInput.value); 
         console.log('Password:', passwordInput.value);
-        window.location.href = newUrl
-    }
+        window.location.href = "/success.html";
 
+    }
 
     });
