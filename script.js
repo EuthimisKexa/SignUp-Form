@@ -11,16 +11,36 @@ const errorLabPassword = document.getElementById('errorLabPassword');
 //add event listener for form submission
 form.addEventListener('submit', function(event) {
 
-    let isValid = false;
+    let isValid = true;
+
+    if (usernameInput.value.trim() === '') {
+        errorLabUser.innerHTML = 'Username is <i>required</i>.';
+        isValid = false;
+        errorLabUser.hidden = false;
+    } else {
+        errorLabUser.hidden = true;
+    }
+
+    if (emailInput.value.trim() === '') {
+        errorLabEmail.innerHTML = 'Email is <i>required</i>.';
+        isValid = false;
+        errorLabEmail.hidden = false;
+    } else {
+        errorLabEmail.hidden = true;
+    }
+
+    if (passwordInput.value.trim() === '') {
+        errorLabPassword.innerHTML = 'Password is <i>required</i>.';
+        isValid = false;
+        errorLabPassword.hidden = false;
+    }else {
+        errorLabPassword.hidden = true;
+    }
 
     //error display elements
-
-    errorLabEmail.hidden = false;
-    errorLabUser.hidden = false;
-    errorLabPassword.hidden = false;
     
 
     if (!isValid) {
-    event.preventDefault();
+        event.preventDefault();
     }
     });
